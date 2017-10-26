@@ -1,0 +1,50 @@
+:root {
+  --sticker: blue;
+}
+
+html {
+  background-color: #f1f1f1;
+}
+
+article {
+  border-radius: 25px;
+  background-color: white;
+  overflow: auto;
+  width: 400px;
+  height: 300px;
+  transform: rotate(7deg);
+  box-shadow: 10px 10px 10px gray;
+}
+
+header {
+  background-color: var(--sticker);
+  border-radius: 0px;
+  padding: 2px;
+  color: white;
+  text-align: center;
+  height: 100px;
+  margin: 0px;
+}
+
+header h1 {
+  font-size: 4em;
+  margin: 0px;
+}
+
+header h2 {
+  margin-top: 0px;
+}
+
+section {
+  text-align: center;
+  height: 150px;
+}
+
+section h1 {
+  font-size: 2em;
+}
+
+footer {
+  background-color: var(--sticker);
+  height: 25px;
+}
