@@ -6,6 +6,10 @@ html {
   background-color: #f1f1f1;
 }
 
+.site-header {
+  margin-bottom: 50px;
+}
+
 article {
   border-radius: 25px;
   background-color: white;
@@ -16,7 +20,7 @@ article {
   box-shadow: 10px 10px 10px gray;
 }
 
-header {
+article header {
   background-color: var(--sticker);
   border-radius: 0px;
   padding: 2px;
