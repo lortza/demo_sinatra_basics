@@ -1,10 +1,14 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'erb'
+require 'json'
 require 'pry'
 
+enable :sessions
 
 get '/name_form' do
+  my_arr = [1,2,[3,4]]
+  response.set_cookie( "arr", my_arr.to_json )
   erb :name_form
 end
 
