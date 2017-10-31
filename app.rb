@@ -6,13 +6,13 @@ require 'pry'
 
 enable :sessions
 
-get '/name_form' do
+get '/' do
   my_arr = [1,2,[3,4]]
   response.set_cookie( "arr", my_arr.to_json )
-  erb :name_form
+  erb :index
 end
 
-post '/name_form' do
+post '/' do
   # pick up the user data from the form
   user_name = params[:name_from_form]
   user_city = params[:city_from_form]
